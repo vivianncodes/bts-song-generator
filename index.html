@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>BTS Song Generator | VivianCodes 🎧</title>
   </head>
   <body>
@@ -19,7 +20,7 @@
         <h1>SONG<br />GENERATOR</h1>
       </header>
       <main>
-        <form>
+        <form id="song-lyrics-form">
           <input
             class="instructions"
             type="text"
@@ -31,9 +32,10 @@
           <input type="submit" class="submit-button" />
         </form>
       </main>
-      <div class="song-lyrics">
-        Lyrics go here <br />
-        Next line here
+      <div class="lyrics-container">
+        <p>Give this song a listen:</p>
+        <br />
+        <div class="song-lyrics" id="song-lyrics"></div>
       </div>
       <footer>
         Coded by
