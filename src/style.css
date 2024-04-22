@@ -1,3 +1,93 @@
+body {
+  background-color: #ebd9fc;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px auto;
+  margin-bottom: 50px;
+}
+
+img {
+  margin-right: 20px;
+  width: 100px;
+}
+
 h1 {
-  color: purple;
+  color: black;
+  text-align: left;
+  font-family: "Aldrich", sans-serif;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 50px;
+}
+
+form {
+  background-color: #fbfaff;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  display: flex;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+a {
+  color: #6f46a6;
+  text-decoration: none;
+}
+
+#specific-link {
+  text-decoration: underline !important;
+}
+
+.container {
+  margin: 120px auto;
+  margin-top: 0;
+  max-width: 600px;
+}
+
+.instructions {
+  border: 1px solid #6f46a6;
+  border-radius: 30px;
+  color: #6f46a6;
+  padding: 15px;
+  width: 80%;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.submit-button {
+  background-color: #6f46a6;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  margin-left: 10px;
+  padding: 15px 25px;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.song-lyrics {
+  background-color: #fbfaff;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  line-height: 1.5;
+  padding: 30px;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
 }

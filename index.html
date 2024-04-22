@@ -3,46 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aldrich&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>BTS Song Generator | VivianCodes 🎧</title>
   </head>
   <body>
-    <header><h1>BTS Song Generator</h1></header>
+    <div class="container">
+      <header>
+        <img src="src/BTS_Logo.png" alt="" />
+        <h1>SONG<br />GENERATOR</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            class="instructions"
+            type="text"
+            placeholder="Enter a topic you want to hear about"
+            autofocus
+            required
+            autocomplete="off"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+      </main>
+      <div class="song-lyrics">
+        Lyrics go here <br />
+        Next line here
+      </div>
+      <footer>
+        Coded by
+        <a
+          href="https://www.shecodes.io/graduates/107226-vivian-nguyen"
+          target="_blank"
+          ><strong>Vivian Nguyen</strong></a
+        >
+        👩‍💻 <br />
+        This AI project is
+        <a
+          href="https://github.com/vivianncodes/bts-song-generator"
+          target="_blank"
+          id="specific-link"
+          >open-sourced on GitHub</a
+        >
+        and is
+        <a
+          href="https://bts-song-generator-vivianncodes.netlify.app"
+          target="_blank"
+          id="specific-link"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter a topic you want to hear about"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-    </main>
-    <div>Lyrics go here</div>
-    <footer>
-      Coded by
-      <a
-        href="https://www.shecodes.io/graduates/107226-vivian-nguyen"
-        target="_blank"
-        >Vivian Nguyen</a
-      >
-      👩‍💻 <br />
-      This AI project is
-      <a
-        href="https://github.com/vivianncodes/bts-song-generator"
-        target="_blank"
-        >open-sourced on GitHub</a
-      >
-      and is
-      <a
-        href="https://bts-song-generator-vivianncodes.netlify.app"
-        target="_blank"
-        >hosted on Netlify</a
-      >
-    </footer>
     <script src="src/index.js"></script>
   </body>
 </html>
