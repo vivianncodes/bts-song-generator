@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>BTS Song Generator | VivianCodes 🎧</title>
   </head>
   <body>
@@ -23,6 +24,7 @@
         <form id="song-lyrics-form">
           <input
             class="instructions"
+            id="user-instructions"
             type="text"
             placeholder="Enter a topic you want to hear about"
             autofocus
@@ -33,8 +35,7 @@
         </form>
       </main>
       <div class="lyrics-container">
-        <p>Give this song a listen:</p>
-        <br />
+        <p id="song-generating"></p>
         <div class="song-lyrics" id="song-lyrics"></div>
       </div>
       <footer>
