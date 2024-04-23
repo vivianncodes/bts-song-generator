@@ -20,24 +20,31 @@
         <img src="src/BTS_Logo.png" alt="" />
         <h1>SONG<br />GENERATOR</h1>
       </header>
+
       <main>
-        <form id="song-lyrics-form">
-          <input
-            class="instructions"
-            id="user-instructions"
-            type="text"
-            placeholder="Enter a topic you want to hear about"
-            autofocus
-            required
-            autocomplete="off"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
+        <div class="form-container">
+          <form id="song-lyrics-form">
+            <input
+              class="instructions"
+              id="user-instructions"
+              type="text"
+              placeholder="Enter a topic you want to hear about"
+              autofocus
+              required
+              autocomplete="off"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e. Love, depression, overcoming challenges</div>
+        </div>
       </main>
-      <div class="lyrics-container">
+
+      <div id="lyrics-container" class="hidden">
         <p id="song-generating"></p>
         <div class="song-lyrics" id="song-lyrics"></div>
+        <div id="disclaimer"></div>
       </div>
+
       <footer>
         Coded by
         <a

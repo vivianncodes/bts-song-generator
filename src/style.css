@@ -6,6 +6,12 @@ body {
   font-style: normal;
 }
 
+.container {
+  margin: 120px auto;
+  margin-top: 0;
+  max-width: 600px;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -29,27 +35,26 @@ h1 {
 }
 
 form {
-  background-color: #fbfaff;
+  display: flex;
+}
+
+.form-container {
+  background: #fbfaff;
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  display: flex;
   padding: 30px;
   margin-bottom: 30px;
 }
 
-a {
-  color: #6f46a6;
-  text-decoration: none;
+.hint {
+  font-size: 12px;
+  margin-top: 5px;
+  margin-left: 15px;
+  opacity: 0.6;
 }
 
-#specific-link {
-  text-decoration: underline !important;
-}
-
-.container {
-  margin: 120px auto;
-  margin-top: 0;
-  max-width: 600px;
+.hidden {
+  display: none;
 }
 
 .instructions {
@@ -77,7 +82,7 @@ a {
   font-style: normal;
 }
 
-.lyrics-container {
+#lyrics-container {
   background-color: #fbfaff;
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -87,7 +92,30 @@ a {
   font-size: 15px;
 }
 
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+#generating {
+  animation: typing 1s steps(10, end) infinite;
+}
+
+#disclaimer {
+  font-size: 12px;
+}
+
 footer {
   text-align: center;
   font-size: 12px;
+}
+
+a {
+  color: #6f46a6;
+  text-decoration: none;
+}
+
+#specific-link {
+  text-decoration: underline !important;
 }
